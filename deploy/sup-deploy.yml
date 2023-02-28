@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
         - name: super
-          image: leekyeongseo/supermario:12
+          image: leekyeongseo/supermario:13

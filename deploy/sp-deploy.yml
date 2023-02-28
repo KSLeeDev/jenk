@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
         - name: spring
-          image: leekyeongseo/springbootapp:12
+          image: leekyeongseo/springbootapp:13
