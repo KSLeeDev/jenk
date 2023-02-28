@@ -12,7 +12,7 @@ pipeline {
     gitSshaddress = 'git@github.com:KSLeeDev/jenk.git'
     gitCredential = 'git_cre' // github credential 생성 시의 ID
     dockerHubRegistry2 = 'leekyeongseo/supermario'
-    dockerHubRegistry = 'leekyeongseo/springbootApp'
+    dockerHubRegistry = 'leekyeongseo/springbootapp'
     dockerHubRegistryCredential = 'docker_cre'
   }
 
