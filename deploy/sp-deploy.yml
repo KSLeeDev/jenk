@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sp-svc
+spec:
+  selector:
+    app: spring
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8085
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sp-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spring
+  template:
+    metadata:
+      labels:
+        app: spring
+    spec:
+      containers:
+        - name: spring
+          image: leekyeongseo/springbootApp:1
